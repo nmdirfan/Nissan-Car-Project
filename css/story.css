@@ -1,0 +1,90 @@
+.story__picture{
+    
+    background-color:#f9f7f6;
+    
+    grid-column: full-start / col-end 4;
+    /* background-image: linear-gradient(rgba(#c69963, .5), rgba
+    (#c69963, .5)), url(../image/greenplanet.jpg);
+     */
+     background-image: url(../image/bg.jpg);
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+}
+
+
+@media screen and (max-width:800px) {
+   
+    .story__picture{
+       grid-column: 1/ -1;
+        grid-row: 5 / 6;
+        margin-bottom: 1rem;
+    }
+}
+/* .story__img--1{
+    
+    width:100%;
+    grid-row: 4 / 6;
+    grid-column: 1/6;
+    box-shadow: 0 2rem 5rem rgba(#000,.1);
+} */
+/* .story__img--2{
+    width: 130%;
+    grid-row: 4/7;
+    grid-column: 4/7;
+    z-index: 30;
+    box-shadow: 0 2rem 5rem rgba(#000,.8);
+} */
+.story__content{
+    background-color:#d9d3cf;
+    grid-column: col-start 5 / full-end;
+    padding:8rem 5vw;
+    font-size: 16px;
+    
+    /* display: flex;               using flex 
+    flex-direction: column;               felx and grid same process but 
+    justify-content: center;                  coding is less on grid..!          
+    align-items: flex-start;
+     */
+
+     display: grid;                         
+     align-items: center;           /* using grid */
+     justify-items: start;
+
+}
+
+@media screen and (max-width:800px) {
+
+    .story__content{
+       grid-column: 1/ -1;
+        grid-row: 6 / 7; 
+    }
+}
+
+.story__text{
+    font-size: 1rem;
+  font-style:italic ;
+    margin-bottom: 1rem; 
+}
+.btn{
+    background-color:#c69963 ;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1.2rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.btn:hover{
+    background-color:#B28451;
+}
+.mb-sm{ margin-bottom: 1rem;}
+.mb-md{ margin-bottom: 2rem;}
+.mb-lg{ margin-bottom: 3rem;}
+.mb-hg{ margin-bottom: 4rem;}
